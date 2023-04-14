@@ -4,8 +4,11 @@ body {
 }
 #content {
   background-color: #f1f1f1;
+  /* display: flex; */
+  /* justify-content: center; */
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%; 
+  /* grid-template-columns: 22pc 11pc;  */
+  grid-template-columns:4fr 4em ;
 
 }
 #content div{
