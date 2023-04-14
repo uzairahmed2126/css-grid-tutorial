@@ -1,38 +1,53 @@
 body {
-  margin-left:  450px;
-  margin-top: 250px;
   background-color: #502234;
+  text-align: center;
+  
   /* transform: perspective(1000px) rotateY(360deg) rotateZ(360deg)
     rotate3d(0, 0, 0, 360deg) rotate(720deg); */
-  transition: all 2s ease-in-out 1s;
+  /* transition: all 3s ease-in-out 1ms; */
 }
+
 #content {
+  display: grid;
+  /* grid-auto-rows: 30px 30px 323px; */
+  /* grid-template-rows:repeat(3, minmax (200px auto)); */
+  grid-template-rows: repeat(3,minmax( 200px,auto));
+  /* grid-column-gap:1px ;
+  grid-row-gap:2px ; */
+  grid-gap: 10px;
+  max-width: 960px;  
+  margin: 0 auto;
   background-color: #f1f1f1;
   font-family: Arial, Helvetica, sans-serif;
+  transform: rotate(180deg) scale(-1)
+}
+
+#content {
+  transition: all 2s ease-in-out 4ms;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(0, 0, 0, 0.2);
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
-  display: grid;
   /* grid-template-columns: 22pc 11pc;  */
   /* grid-template-columns: 4fr 3fr 1fr 13fr; */
-  grid-template-columns: repeat(2, 1fr 1fr);
-  width: 500px;
-  height: 200px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3),
-    0 0 30px rgba(0, 0, 0, 0.2);
-  /* transform: perspective(1000px) rotateY(360deg) rotateZ(360deg)
-    rotate3d(0, 0, 0, 360deg) rotate(720deg); */
-  transition: all 2s ease-in-out 4ms;
-
+  grid-template-columns: repeat(3,1fr );
+  /* grid-template-rows: 100px 100px; */
+  /* grid-auto-rows: minmax(200px) auto; */
+  /* grid-auto-flow: 3px; */
+  /* transform: perspective(1000px) rotateY(360deg) rotateZ(360deg) */
+  /* rotate3d(0, 0, 0, 360deg) rotate(720deg); */
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.2); */
 }
+
 #content div {
   background-color: #fff;
-  border-radius: 10px 40px;
+  /* border-radius: 4px; */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3),
     0 0 30px rgba(0, 0, 0, 0.2);
+    margin: 30px;
 }
+
 #content div:nth-child(even) {
   background-color: rgb(62, 117, 62);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3),
