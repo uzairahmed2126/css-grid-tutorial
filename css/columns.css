@@ -12,27 +12,27 @@ body {
   /* align-items: center; */
   display: grid;
   /* grid-template-columns: 22pc 11pc;  */
-  grid-template-columns: 4fr 3fr 1fr 13em;
+  /* grid-template-columns: 4fr 3fr 1fr 13fr; */
+  grid-template-columns: repeat(4,1fr);
+
 
   width: 200px;
   height: 200px;
-  background-color: #fff;
-  border-radius: 10px;
+  border-radius: 100px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3),
     0 0 30px rgba(0, 0, 0, 0.2);
-  transform: perspective(100px) rotateY(-27deg);
-  transition: all 3s ease-in-out 1s;
+  transform: perspective(1000px) rotateY(360deg) rotateZ(360deg) rotate3d(0,0,0,360deg) rotate(720deg);
+  transition: all 3s ease-in-out 60ms;
 
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.2); */
 }
 #content div {
   background-color: #f1f1f1;
-  padding: 10px;
+  /* padding: 10px; */
+  border-radius: 0 40px ;
 }
 #content div:nth-child(even) {
   background-color: rgb(62, 117, 62);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3),
     0 0 30px rgba(0, 0, 0, 0.2);
-
-  display: grid;
 }
