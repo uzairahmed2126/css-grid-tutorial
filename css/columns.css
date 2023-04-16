@@ -12,7 +12,7 @@ body {
   display: grid;
   /* grid-auto-rows: 30px 30px 323px; */
   /* grid-template-rows:repeat(3, minmax (200px auto)); */
-  grid-template-rows: repeat(4,minmax( 150px,auto));
+  /* grid-template-rows: repeat(4,minmax( 150px,auto)); */
   grid-template-columns: repeat(6,1fr);
   /* grid-column-gap:1px ;
   grid-row-gap:2px ; */
@@ -61,5 +61,31 @@ body {
 .one{
   /* grid-column-start: 4; */
   /* grid-column-end: 4; */
-  grid-column: 9 / 9;
+  grid-column: 10 / 9;
+}
+.two{
+  grid-column: 10 / 8;
+}
+
+.three{
+  grid-column: 10 / 7;
+}
+
+.four{
+  grid-column: 10 / 6;
+}
+.five{
+  grid-column: 10 / 5;
+}
+.six{
+  grid-column: 10 / 4;
+}
+.seven{
+  grid-column: 10 / 3;
+}
+.eight{
+  grid-column: 10 / 2;
+}
+.nine{
+  grid-column: 10 / 1;
 }
