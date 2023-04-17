@@ -72,6 +72,8 @@ footer{
     border:  1px solid #000;
     opacity: 0.2;
     margin: 0;
+    /* background: #000; */
+
 }
 input:checked + #portion #grid{
     display: grid;
